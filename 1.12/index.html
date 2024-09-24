@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const person = {
+            name: 'Виктор',
+            surname: 'Карамзин',
+            patronymic: 'Геннадьевич',
+            ocupation: 'Преподаватель спец. дисциплин',
+            degree: 'Высшее',
+            category: 'Первая',
+            education: 'Московский гос. институт электронной техники',
+            discipline: ['Информатика', 'Основы программирования', 'Инженерная графика'],
+        }
+ 
+    </script>
+</head>
+<body>
+    <div class="content">
+        <script>
+            let line = `ФИО: ${person.surname} ${person.name} ${person.patronymic}<br> Должность: ${person.ocupation}<br> Уровень образования: ${person.degree}<br> Категория: ${person.category} Образование: ${person.education}<br>`
+
+            document.write(line);
+        </script>
+        <ul class="ul-list">
+            <script>
+                const ulList = document.querySelector('.ul-list');
+                person.discipline.forEach((item) => {
+                    const liItem = document.createElement('li')
+                    liItem.innerText = item;
+                    ulList.appendChild(liItem);
+                })
+            </script>
+        </ul>
+    </div>
+</body>
+</html>
