@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const person = {
+            name: 'Виктор',
+            surname: 'Карамзин',
+            patronymic: 'Геннадьевич',
+            ocupation: 'Преподаватель спец. дисциплин',
+            degree: 'Высшее',
+            category: 'Первая',
+            education: 'Московский гос. институт электронной техники',
+            discipline: 'Информатика',
+        }
+ 
+    </script>
+</head>
+<body>
+    <div class="content">
+        <script>
+            document.write(`ФИО: ${person.surname} ${person.name} ${person.patronymic}<br>`);
+            document.write(`Должность: ${person.ocupation}<br>`);
+            document.write(`Уровень образования: ${person.degree}<br>`);
+            document.write(`Категория: ${person.category}`);
+            document.write(`Образование: ${person.education}<br>`);
+            document.write(`Дисциплина: ${person.discipline}<br>`);
+        </script>
+    </div>
+</body>
+</html>
